@@ -44,7 +44,9 @@ window.TransportCostCalculator = async function TransportCostCalculator(
   }
 
   const distance = await calculateDistance(destination)
-  const cost = await getCost(distance / 1000, multiplier)
+  const parsedDistance = parseFloat(distance / 1000).toFixed(2)
 
-  callback(cost)
+  const cost = await getCost(parsedDistance, multiplier)
+
+  callback({ distance: parsedDistance, cost: cost })
 }

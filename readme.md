@@ -24,5 +24,13 @@ TransportCostCalculator({
 Uses the [reverse geocode API](https://openrouteservice.org/dev/#/api-docs/geocode) to get the coordinates for a given address string,
 then uses the [distance API](https://openrouteservice.org/dev/#/api-docs/directions) to calculate the distance between the provided
 origin point and destination. The transport cost is then calculated by multiplying the distance in kilometers with the provided price
-per kilometer. An optional multiplier parameter can be passed to multiply the calculated cost. Value passed to callback has 2 decimal
-points (e.g. `5.47`).
+per kilometer. An optional multiplier parameter can be passed to multiply the calculated cost.
+
+Return value passed to callback:
+```js
+  {
+    distance: 12.16,
+    cost: 5.47
+  }
+```
+Distance in kilometers, rounded to 2 decimal points.
