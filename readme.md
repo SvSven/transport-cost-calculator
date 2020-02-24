@@ -6,6 +6,11 @@ This is a very case-specific solution meant to replace an old Google Maps featur
 of people still use Internet Explorer when visiting the site this was made for, several polyfills are included and the build is compiled
 with Babel.
 
+The geocode lookup is currently limited to searching for locations in the Netherlands and Belgium for more accurate results.
+This restriction can be changed or removed by either removing or adjusting the `country` url parameter in the `geocodeUrl` variable.
+
+See the [external documentation](https://github.com/pelias/documentation/blob/master/search.md#narrow-your-search) on how to narrow geocode searches.
+
 ### Usage
 
 ```js
