@@ -1,16 +1,18 @@
 {
   "name": "transport-cost-fix",
+  "version": "1.0.1",
+  "author": "Sven van Steenis (https://github.com/SvSven)",
   "scripts": {
     "build": "webpack --mode production"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "babel-loader": "^8.0.6",
-    "promise-polyfill": "8.1.3",
-    "regenerator-runtime": "^0.13.3",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "whatwg-fetch": "^3.0.0"
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "promise-polyfill": "8.2.0",
+    "regenerator-runtime": "^0.13.7",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0",
+    "whatwg-fetch": "^3.6.2"
   }
 }
